@@ -100,62 +100,18 @@ print(oddelovac)
 
 if int(number) in range(1, len(TEXTS) + 1):
     vybrany_text = TEXTS[int(number) - 1].split()
-    
-    jedno_slovo = 0
-    dve_slova = 0
-    tri_slova = 0
-    ctyri_slova = 0
-    pet_slov = 0
-    sest_slov = 0
-    sedm_slov = 0
-    osm_slov = 0
-    devet_slov = 0
-    deset_slov = 0
-    jedenact_slov = 0
-    dvanact_slov = 0
-    trinact_slov = 0
+
+    pocet_slov = [0] * 14  
 
     for slovo in vybrany_text:
-         if len(slovo.strip(", . ! ?")) == 1:
-              jedno_slovo += 1
-         if len(slovo.strip(", . ! ?")) == 2:
-              dve_slova += 1
-         if len(slovo.strip(", . ! ?")) == 3:
-              tri_slova += 1
-         if len(slovo.strip(", . ! ?")) == 4:
-              ctyri_slova += 1
-         if len(slovo.strip(", . ! ?")) == 5:
-              pet_slov += 1
-         if len(slovo.strip(", . ! ?")) == 6:
-              sest_slov += 1
-         if len(slovo.strip(", . ! ?")) == 7:
-              sedm_slov += 1
-         if len(slovo.strip(", . ! ?")) == 8:
-              osm_slov += 1
-         if len(slovo.strip(", . ! ?")) == 9:
-              devet_slov += 1
-         if len(slovo.strip(", . ! ?")) == 10:
-              deset_slov += 1
-         if len(slovo.strip(", . ! ?")) == 11:
-              jedenact_slov += 1
-         if len(slovo.strip(", . ! ?")) == 12:
-              dvanact_slov += 1
-         if len(slovo.strip(", . ! ?")) == 13:
-              trinact_slov += 1
+        delka_slova = len(slovo.strip(", . ? !"))
+        if 1 <= delka_slova <= 13:
+            pocet_slov[delka_slova] += 1
 
-    print(" 1 |", "*" * jedno_slovo, len("*" * jedno_slovo))   
-    print(" 2 |", "*" * dve_slova, len("*" * dve_slova))    
-    print(" 3 |", "*" * tri_slova, len("*" * tri_slova))   
-    print(" 4 |", "*" * ctyri_slova, len("*" * ctyri_slova)) 
-    print(" 5 |", "*" * pet_slov, len("*" * pet_slov))
-    print(" 6 |", "*" * sest_slov, len("*" * sest_slov)) 
-    print(" 7 |", "*" * sedm_slov, len("*" * sedm_slov)) 
-    print(" 8 |", "*" * osm_slov, len("*" * osm_slov))
-    print(" 9 |", "*" * devet_slov, len("*" * devet_slov))
-    print("10 |", "*" * deset_slov, len("*" * deset_slov))
-    print("11 |", "*" * jedenact_slov, len("*" * jedenact_slov))
-    print("12 |", "*" * dvanact_slov, len("*" * dvanact_slov))
-    print("13 |", "*" * trinact_slov, len("*" * trinact_slov))
+    for delka, pocet in enumerate(pocet_slov[1:], start = 1):
+        print(f"{delka:2} | {'*' * pocet} {pocet}")
+
+
 
 
      
