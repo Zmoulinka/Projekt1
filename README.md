@@ -15,6 +15,7 @@ Knihovny použité v kódu jsou uložené v souboru requirements.txt.
 Pro instalaci doporučuji použít nové virtuální prostředí a s nainstalovaným manažerem spustit následovně.
 
 $ pip3 --version			# overim verzi manageru
+
 $ pip3 install -r requirements.txt	# nainstalujeme knihovny
 
 
