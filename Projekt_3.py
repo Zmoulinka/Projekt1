@@ -14,6 +14,11 @@ import bs4
 import sys
 
 
+volici = []
+obalky = []
+platne_hlasy = []
+
+
 url_hlavni_stazeno = False
 
 def hlavni_url(link): # uložení adresy z argumentu
@@ -33,9 +38,7 @@ else:
           "Zadej název souboru, který zpouštíš, url adresu, ze které získáváš data, v uvozovkách a libovolný název výstupního .csv.")
     quit()
 
-volici = []
-obalky = []
-platne_hlasy = []
+
 
 def get_id(): # Vrací kódy obcí
     city_id = []
