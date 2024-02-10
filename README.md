@@ -36,7 +36,7 @@ argument_1 -> https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=9&xnumnuts=530
 argument_2 -> vysledky_voleb.csv
 
 
-<h2>Spuštění programu</h2>
+<h2>Zpuštění programu</h2>
 
 python Projekt_3.py "https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=9&xnumnuts=5302" vysledky_voleb.csv
 
