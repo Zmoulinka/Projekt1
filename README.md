@@ -5,7 +5,7 @@ Projekt 3 pro Engeto Python Akademii
 
 <h2>Popis projektu</h2>
 
-Projekt má za úkol extrahovat výsledky z parlamentních z roku 2017 z odkazu [zde](https://volby.cz/pls/ps2017nss/ps3?xjazyk=CZ).
+Projekt má za úkol extrahovat výsledky z parlamentních voleb z roku 2017 z odkazu [zde](https://volby.cz/pls/ps2017nss/ps3?xjazyk=CZ).
 
 
 <h2>Instalace knihoven</h2>
@@ -21,7 +21,7 @@ $ pip3 install -r requirements.txt	# nainstalujeme knihovny
 
 <h2>Spuštění projektu</h2>
 
-Soubor Projekt_3.py se spouští z příkazového řádku a požaduje dva argumenty. A to odkaz na územní celek a libovolný název .csv souboru.
+Soubor Projekt_3.py se zpouští z příkazového řádku a požaduje dva argumenty. A to odkaz na územní celek a libovolný název .csv souboru.
 
 
 Výstupem pak je soubor .csv s výsledky voleb.
@@ -36,7 +36,7 @@ argument_1 -> https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=9&xnumnuts=530
 argument_2 -> vysledky_voleb.csv
 
 
-<h2>Spuštění programu</h2>
+<h2>Zpuštění programu</h2>
 
 python Projekt_3.py "https://volby.cz/pls/ps2017nss/ps32?xjazyk=CZ&xkraj=9&xnumnuts=5302" vysledky_voleb.csv
 
