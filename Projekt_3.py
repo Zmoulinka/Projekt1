@@ -126,7 +126,7 @@ def election_results(link, file): # Hlavní část funkce
         for party in parties:
             header.append(party)
         with open(file, 'w', newline='') as f:
-            f_writer = csv.writer(f, delimiter= ";")
+            f_writer = csv.writer(f, delimiter= ",")
             f_writer.writerow(header)
             f_writer.writerows(content)
         print("Ukončuji program:", sys.argv[0])
